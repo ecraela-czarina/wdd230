@@ -1,0 +1,22 @@
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+
+    .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        overflow-x: auto;
+    }
+
+    .card {
+        flex: 0 0 auto;
+        width: calc((90% - 10px) / 2);
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    .card:last-child {
+        flex: 1;
+        margin-right: 0;
+        margin-left: 5px;
+    }
+}

@@ -1,0 +1,23 @@
+@media screen and (min-width: 1024px) {
+
+
+    .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        overflow-x: auto;
+    }
+
+    .card {
+        flex: 0 0 auto;
+        width: calc((90%) / 3);
+        margin-right: 30px;
+        margin-left: 15px;
+    }
+
+    .card:last-child {
+        margin-right: 5px;
+    }
+
+
+}
