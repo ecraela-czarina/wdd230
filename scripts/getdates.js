@@ -15,5 +15,5 @@ const map = document.querySelector('.map');
 hamButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
     hamButton.classList.toggle('open');
-    map.classList.toggle('invisible'); // Toggle the 'invisible' class on the map element
+    map.classList.toggle('invisible');
 });
