@@ -1,3 +1,12 @@
+header h1::first-letter,
+header h1::first-line {
+    color: #d3e87d;
+    /* Change the color as desired */
+    font-size: 150%;
+    /* Change the font size as desired */
+}
+
+
 header {
     background-color: #003008;
     color: #fff;
