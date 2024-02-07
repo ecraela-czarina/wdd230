@@ -30,6 +30,14 @@
     display: inline-block;
 }
 
+h1 {
+    font-size: 50px;
+    font-family: 'Libre Baskerville', serif;
+    color: #F6ECA9;
+    background-color: #11235A;
+    padding: 10px;
+}
+
 h2 {
     font-family: 'Libre Baskerville', serif;
     color: #11235A;
