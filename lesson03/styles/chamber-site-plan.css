@@ -38,3 +38,9 @@ h2 {
 p {
     font-family: 'Cabin', sans-serif;
 }
+
+.wireframe img {
+    width: 20px;
+    height: auto;
+    /* Maintain aspect ratio */
+}
