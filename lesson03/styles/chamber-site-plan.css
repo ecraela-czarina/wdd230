@@ -1,0 +1,40 @@
+.heading {
+    font-family: 'Libre Baskerville', serif;
+
+}
+
+.body {
+    font-family: 'Cabin', sans-serif;
+}
+
+.primary {
+    color: #11235A;
+}
+
+.secondary {
+    color: #596FB7;
+}
+
+.Other-1 {
+    color: #C6CF9B;
+    background-color: #11235A;
+}
+
+.Other-2 {
+    color: #F6ECA9;
+    background-color: #11235A;
+}
+
+.Other-1,
+.Other-2 {
+    display: inline-block;
+}
+
+h2 {
+    font-family: 'Libre Baskerville', serif;
+    color: #11235A;
+}
+
+p {
+    font-family: 'Cabin', sans-serif;
+}
