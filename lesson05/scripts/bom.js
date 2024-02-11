@@ -1,5 +1,6 @@
 const buttonElement = document.querySelector('#button');
 const inputElement = document.querySelector('#favchap');
+// used the id of the unordered list
 const ulElement = document.querySelector('#list');
 
 buttonElement.addEventListener('click', () => {
