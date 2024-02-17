@@ -1,0 +1,91 @@
+@media only screen and (min-width: 768px) {
+
+    header {
+        display: grid;
+        grid-template-columns: auto auto 1fr;
+        color: #F6ECA9;
+        background-color: #11235A;
+    }
+
+
+    #mode {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 3rem;
+        cursor: pointer;
+        font-size: 2rem;
+    }
+
+    header nav {
+        display: flex;
+        align-items: center;
+        grid-column: 3;
+    }
+
+
+    header nav a {
+        padding-left: 85px !important;
+        padding-right: 85px !important;
+        background-color: #F6ECA9;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 15px;
+        color: #11235A;
+        border: 1px solid black;
+        margin-left: 25px;
+        margin-right: 25px;
+        align-items: flex-end;
+        font-weight: bold;
+        font-family: 'Cabin', sans-serif;
+    }
+
+    header nav a:hover {
+        background-color: #C6CF9B;
+        color: #596FB7;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section {
+        border: 1px solid #C6CF9B;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    /* Hero image Section */
+    .hero-image a:hover {
+        background-color: #C6CF9B;
+        color: #596FB7;
+    }
+
+    .hero-image h2 {
+        font-size: 1px;
+        transform: translate(-100%, -100%);
+    }
+
+    .hero-image a {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(17, 35, 90, 0.8);
+        color: #F6ECA9;
+        padding: 15px 30px;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 20px;
+        font-size: 50px;
+    }
+
+    /* Section-groups */
+
+    .section-group {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+
+}
