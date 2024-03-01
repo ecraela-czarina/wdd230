@@ -86,7 +86,27 @@
         height: 175px;
     }
 
+    /* hero-image */
 
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+
+    .temple {
+        position: absolute;
+        top: 30%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        background-color: #003008;
+
+        color: #fff7f7;
+        padding: 15px 30px;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 20px;
+        font-size: 50px;
+    }
 
 
 }
