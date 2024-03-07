@@ -163,6 +163,22 @@ footer p {
     font-weight: 700;
 }
 
+/* Maps */
+.map {
+    animation: fade 15s;
+    align-items: center;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 /* when the button is clicked - the open class is toggled (added/removed) */
 .open a {
     display: block;
