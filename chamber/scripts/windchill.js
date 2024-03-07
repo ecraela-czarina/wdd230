@@ -4,9 +4,9 @@ function calculateWindChill() {
     var temperature = parseFloat(document.getElementById('currentTemperature').innerText);
     var windSpeed = parseFloat(document.getElementById('currentWindSpeed').innerText);
 
-    if (temperature <= 50 && windSpeed > 3.0) {
+    if (temperature <= 100 && windSpeed > 3.0) {
         var windChillFactor = calculateWindChillFactor(temperature, windSpeed);
-        document.getElementById('windChillFactor').innerText = windChillFactor.toFixed(2) + " °F";
+        document.getElementById('windChillFactor').innerText = windChillFactor.toFixed(2);
     } else {
         document.getElementById('windChillFactor').innerText = "N/A";
     }
