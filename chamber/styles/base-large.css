@@ -25,13 +25,12 @@
 
 
     header nav a {
-        padding-left: 85px !important;
-        padding-right: 85px !important;
+        padding-left: 85px;
+        padding-right: 85px;
         background-color: #F6ECA9;
-        padding: 10px;
         text-decoration: none;
         font-size: 15px;
-        color: #11235A;
+        /* color: #11235A; */
         border: 1px solid black;
         margin-left: 25px;
         margin-right: 25px;
@@ -78,6 +77,11 @@
         font-weight: bold;
         border-radius: 20px;
         font-size: 50px;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
     }
 
     /* Section-groups */
