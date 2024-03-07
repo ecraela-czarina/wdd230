@@ -166,7 +166,6 @@ footer p {
 /* Maps */
 .map {
     animation: fade 15s;
-    align-items: center;
 }
 
 @keyframes fade {
