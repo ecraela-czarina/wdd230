@@ -191,7 +191,7 @@ footer p {
 
 
 .stuff {
-    margin: .5m;
+    margin: 0.5px;
     border: 1px solid rgba(0, 0, 0, .1);
     background-color: #bed;
     max-width: 580px;
