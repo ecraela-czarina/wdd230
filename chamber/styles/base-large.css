@@ -92,4 +92,45 @@
     }
 
 
+    /* Discover */
+
+    .navigation-index ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #555555;
+        list-style-type: none;
+        padding: 0;
+        color: azure;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+
+    }
+
+    .navigation-index li {
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .navigation-index ul li {
+        margin: 0 10px;
+    }
+
+    .navigation-index a {
+        display: block;
+        text-decoration: none;
+        color: #ffffff;
+        padding: 10px;
+        font-size: larger;
+    }
+
+
+    /* Container */
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+    }
+
 }

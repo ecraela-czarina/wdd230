@@ -189,6 +189,71 @@ header nav a {
 }
 
 
+
+/* Discover */
+
+
+.discover h1::first-letter,
+.discover h1::first-line {
+    color: #d3e87d;
+    font-size: 150%;
+}
+
+
+.discover {
+    background-color: #003008;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.discover img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.discover h1 {
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+/* Container */
+
+.container {
+    grid-template-columns: 1fr;
+}
+
+.calendar {
+    text-align: center;
+}
+
+.calendar table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar th,
+.calendar td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.calendar td {
+    cursor: pointer;
+}
+
+.today {
+    background-color: #ffff66;
+}
+
+
+
 /* large view navigation ************************************/
 @media (min-width: 37.5em) {
     h1 {
@@ -225,6 +290,47 @@ header nav a {
     }
 
     .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .stuff {
+        margin: 1rem auto;
+    }
+
+
+    /* Discover */
+
+    h1 {
+        font-size: 2.5rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+
+    .navigation-index {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #555555;
+        list-style-type: none;
+        padding: 0;
+        color: azure;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .navigation-index a {
         display: block;
         flex: 1 1 100%;
     }
