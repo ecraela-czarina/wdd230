@@ -88,14 +88,14 @@ main {
 .wf1 label {
     display: block;
     padding: 1rem;
-    color: red;
     font-size: .9rem;
 }
 
 .wf1 div {
     padding-top: 1rem;
-    color: #445ba9;
+    color: red;
     font-size: .9rem;
+    font-weight: bold;
 }
 
 .wf1 input[type="text"],
@@ -104,7 +104,8 @@ main {
 .wf1 input[type="email"],
 .wf1 input[type="url"],
 .wf1 select,
-.wf1 input[type="number"] {
+.wf1 input[type="number"],
+.wf1 input[type="date"] {
     background-color: #eee;
     display: block;
     border: solid 1px #999;
@@ -113,6 +114,7 @@ main {
     color: #555;
     width: 100%;
     max-width: 400px;
+    appearance: none;
 }
 
 .wf1 input[type="radio"],
