@@ -21,8 +21,8 @@
 
 <body>
     <header class="discover">
-        <img src="images/Czarina_Profile.webp" alt="Profile Picture">
-        <h1>Czarina Ecraela</h1>
+        <img src="images/Logo.webp" alt="Logo">
+        <h1>Discover</h1>
     </header>
 
     <button id="menu">.</button>
@@ -39,16 +39,26 @@
     <main>
         <div class="container">
             <section id="sidebar">
-                <div id="sidebar-content">
-                    <section class="demographics">
-                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptatibus tenetur totam,
-                            omnis laudantium dolor?</h2>
-                    </section>
-                    <section class="stats">
-                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptatibus tenetur totam,
-                            omnis laudantium dolor?</h2>
-                    </section>
+                <div id="sidebar-content" class="sidebar-content">
 
+                    <section class="localStorage" id="localStorage">
+
+                    </section>
+                    <section class="events">
+                        <h2>UPCOMING EVENTS</h2>
+                        <h3>Business Networking Breakfast:</h3>
+                        <p>March 23, 2024</p>
+                        <p>Time: 8:00 AM - 10:00 AM</p>
+                        <p>Location: San Fernando La Union</p>
+                        <p>Description: Network with local professionals over breakfast. Expand your connections,
+                            exchange ideas, and seize new opportunities. Bring your business cards!</p>
+
+
+                    </section>
+                    <section class="trivia">
+                        <h2>Did You Know?</h2>
+                        <p id="trivia"></p>
+                    </section>
                     <section class="calendar">
                         <h2 id="currentMonthYear"></h2>
                         <div id="calendar"></div>
@@ -58,28 +68,39 @@
             </section>
             <section id="main-content">
                 <section class="image-section">
-                    <img src="placeholder.jpg" data-src="image1.jpg" alt="Image 1" class="lazy-load"
-                        caption="Caption for Image 1">
+                    <picture>
+                        <source media="(max-width: 300px)" srcset="images/discover-img-1-small.webp">
+                        <img src="images/discover-img-1-large.webp" alt="Waves" loading="lazy">
+                        <figcaption>Mesmerizing waves dance along the shore, echoing nature's rhythmic melody.
+                        </figcaption>
+                    </picture>
                 </section>
                 <section class="image-section">
-                    <img src="placeholder.jpg" data-src="image2.jpg" alt="Image 2" class="lazy-load"
-                        caption="Caption for Image 2">
+                    <picture>
+                        <source media="(max-width: 300px)" srcset="images/discover-img-2-small.webp">
+                        <img src="images/discover-img-2-large.webp" alt="Night Life" loading="lazy">
+                        <figcaption>City nights: vibrant lights, bustling streets.</figcaption>
+                    </picture>
                 </section>
                 <section class="image-section">
-                    <img src="placeholder.jpg" data-src="image3.jpg" alt="Image 3" class="lazy-load"
-                        caption="Caption for Image 3">
+                    <source media="(max-width: 300px)" srcset="images/discover-img-3-small.webp">
+                    <img src="images/discover-img-3-large.webp" alt="Hike" loading="lazy">
+                    <figcaption>Exploring nature's wonders, one step at a time.</figcaption>
                 </section>
                 <section class="image-section">
-                    <img src="placeholder.jpg" data-src="image4.jpg" alt="Image 4" class="lazy-load"
-                        caption="Caption for Image 4">
+                    <source media="(max-width: 300px)" srcset="images/discover-img-4-small.webp">
+                    <img src="images/discover-img-4-large.webp" alt="Sunset" loading="lazy">
+                    <figcaption>Nature's canvas, painted with hues of the setting sun.</figcaption>
                 </section>
                 <section class="image-section">
-                    <img src="placeholder.jpg" data-src="image5.jpg" alt="Image 5" class="lazy-load"
-                        caption="Caption for Image 5">
+                    <source media="(max-width: 300px)" srcset="images/discover-img-5-small.webp">
+                    <img src="images/discover-img-5-large.webp" alt="Surfing" loading="lazy">
+                    <figcaption>Riding waves, chasing dreams.</figcaption>
                 </section>
                 <section class="image-section">
-                    <img src="placeholder.jpg" data-src="image6.jpg" alt="Image 6" class="lazy-load"
-                        caption="Caption for Image 6">
+                    <source media="(max-width: 300px)" srcset="images/discover-img-6-small.webp">
+                    <img src="images/discover-img-6-large.webp" alt="Surfing" loading="lazy">
+                    <figcaption>Surf's up, adventure awaits.</figcaption>
                 </section>
             </section>
         </div>

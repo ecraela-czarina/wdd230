@@ -252,7 +252,75 @@ header nav a {
     background-color: #ffff66;
 }
 
+.sidebar-content h2 {
+    background-color: #003008;
+    /* Background color */
+    color: #d3e87d;
+    /* Text color */
+    padding: 10px 0;
+    /* Add padding for better visibility */
+}
 
+
+/* Local Storage */
+
+/* Main */
+
+.image-section {
+    width: 100%;
+    text-align: center;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+}
+
+
+.sidebar-content {
+    gap: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    height: 100%;
+}
+
+
+/* hover */
+
+.image-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-section img {
+    transition: transform 0.3s ease;
+}
+
+.image-section:hover img {
+    transform: scale(1.1);
+    /* Increase the size of the image on hover */
+}
+
+.image-section figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent black background */
+    color: #fff;
+    /* Text color */
+    padding: 10px;
+    margin: 0;
+    opacity: 0;
+    /* Initially hide the caption */
+    transition: opacity 0.3s ease;
+}
+
+.image-section:hover figcaption {
+    opacity: 1;
+    /* Show the caption on hover */
+}
 
 /* large view navigation ************************************/
 @media (min-width: 37.5em) {
