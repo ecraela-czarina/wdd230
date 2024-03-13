@@ -298,7 +298,7 @@ header nav a {
 
 .image-section:hover img {
     transform: scale(1.1);
-    /* Increase the size of the image on hover */
+
 }
 
 .image-section figcaption {
@@ -307,13 +307,10 @@ header nav a {
     left: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
-    /* Semi-transparent black background */
     color: #fff;
-    /* Text color */
     padding: 10px;
     margin: 0;
     opacity: 0;
-    /* Initially hide the caption */
     transition: opacity 0.3s ease;
 }
 
@@ -382,7 +379,6 @@ header nav a {
 
     #menu {
         display: none;
-        /* hide hamburger button */
     }
 
     .navigation-index {

@@ -143,5 +143,5 @@ function setRandomTrivia() {
     triviaElement.textContent = trivias[randomIndex];
 }
 
-// Call the function to set a random trivia when the page loads or refreshes
+// Call the function
 window.onload = setRandomTrivia;
