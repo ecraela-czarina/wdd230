@@ -145,3 +145,5 @@ function setRandomTrivia() {
 
 // Call the function
 window.onload = setRandomTrivia;
+
+document.getElementById('dateTime').value = Date.now();

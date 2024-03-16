@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Union Chamber of Commerce | Join</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development | Czarina Ecraela | Course Assignment Portal">
+    <meta name="author" content="Czarina Ecraela">
+    <meta property="og:title" content="Czarina Ecraela - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tripzilla.ph%2F3d2n-la-union-itinerary%2F37437%2F&psig=AOvVaw1MGXPElZgbJHZEMEkEQYpf&ust=1706534040755000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCNCWku6UgIQDFQAAAAAdAAAAABAD">
+    <meta property="og:url" content="https://ecraela-czarina.github.io/wdd230/">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header class="discover">
+        <img src="images/Logo.webp" alt="Logo">
+        <h1>La Union Chamber of Commerce | Join</h1>
+    </header>
+
+    <button id="menu">.</button>
+    <nav class="navigation-index">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="form-benefits">
+
+            <section class="benefits">
+
+                <h2>Membership Benefits</h2>
+
+                <figure>
+                    <img src="images/np.webp" alt="np">
+                    <figcaption> Enjoy a wide array of benefits without any fee. Gain access to exclusive
+                        member-only events and receive our informative quarterly newsletter.</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/bronze.webp" alt="bronze">
+                    <figcaption>Unlock valuable benefits including discounted event tickets and networking
+                        opportunities. Connect with industry professionals and expand your network.</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/silver.webp" alt="silver">
+                    <figcaption>Elevate your experience with priority registration for events and a featured listing
+                        on our website. Get ahead with premium visibility and early access.</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/gold.webp" alt="gold">
+                    <figcaption> Maximize your benefits with exclusive training sessions and premium advertising
+                        slots. Stand out from the crowd and access unparalleled opportunities for growth.
+                    </figcaption>
+                </figure>
+
+
+
+            </section>
+            <section class="reg-form">
+
+                <h2>Member Registration Form</h2>
+                <form action="thankyou.html" method="get" class="wf1">
+                    <fieldset>
+
+                        <legend>Member Information</legend>
+                        <label for="fname">First Name* <input type="text" name="fname" id="fname" required></label>
+                        <label for="lname">Last Name* <input type="text" name="lname" id="lname" required></label>
+                        <label for="position">Title/Position* <input type="text" id="position" name="position" required
+                                pattern="[a-zA-Z\s-]{7,}"></label>
+                        <label for="email">Email* <input type="email" name="email" id="email"
+                                placeholder="myemail@gmail.com" required></label>
+                        <label for="phone">Mobile Phone Number* <input type="tel" name="phone" id="phone"
+                                placeholder="12345678902" required></label>
+                    </fieldset>
+
+                    <fieldset>
+
+                        <legend>Business Information</legend>
+                        <label for="oname">Business/Organization Name* <input type="text" name="oname" id="oname"
+                                required></label>
+                        <label>Membership Level:</label>
+                        <label for="NP"><input type="radio" id="NP" name="membershipLevel" value="NP" required> NP
+                            Membership
+                            (Free)</label>
+                        <label for="Bronze"><input type="radio" id="Bronze" name="membershipLevel" value="Bronze"
+                                required>
+                            Bronze Membership</label>
+                        <label for="Silver"><input type="radio" id="Silver" name="membershipLevel" value="Silver"
+                                required>
+                            Silver Membership</label>
+                        <label for="Gold"><input type="radio" id="Gold" name="membershipLevel" value="Gold" required>
+                            Gold
+                            Membership</label>
+
+                        <label for="description">Organization Description: <textarea id="description"
+                                name="description"></textarea></label>
+
+
+                    </fieldset>
+                    <input type="hidden" id="dateTime" name="dateTime">
+                    <button type="submit">Join Now</button>
+                </form>
+            </section>
+
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p id="copyrightYear">© 2024 | Czarina Ecraela | Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+</body>
+
+</html>

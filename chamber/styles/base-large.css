@@ -255,4 +255,16 @@
         border-radius: 8px;
         height: 100%;
     }
+
+    .form-benefits {
+
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+
+    }
+
+    .benefits img {
+        width: 100%;
+        max-width: 300px;
+    }
 }
