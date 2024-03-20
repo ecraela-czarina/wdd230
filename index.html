@@ -56,30 +56,15 @@
         <div class="section">
             <section class="card">
                 <h3>Learning Activities</h3>
-                <ul>
-                    <li><a href="lesson02/design.html">Web Design Principles</a></li>
-                    <li><a href="lesson02/design-principles.html">02 Assignment: Design Principles Document</a></li>
-                    <li><a href="images/css_combinators.png">CSS Combinators</a></li>
-                    <li><a href="https://codepen.io/ecraela-czarina/pen/yLwvwdN">CSS Pseudo Elements</a></li>
-                    <li><a href="https://codepen.io/ecraela-czarina/pen/xxBWEYY">Responsive Menu</a></li>
-                    <li><a href="https://codepen.io/ecraela-czarina/pen/VwRGGeL">CSS Pseudo-Classes</a></li>
-                    <li><a href="lesson05/bom.html">DOM Manipulation</a></li>
-                    <li><a href="images/landscape.webp">WebP</a></li>
-                    <li><a href="lesson06/responsive-images.html">Responsive Images</a></li>
-                    <li><a href="lesson07/lazyload.html">Lazy Load</a></li>
-                    <li><a href="lesson07/bom.html">Local Storage</a></li>
-                    <li><a href="lesson08/tablebuild.html">Table Build</a></li>
-                    <li><a href="form-start/Form-start/index.html">Form Start</a></li>
-                    <li><a href="lesson09/new-ward-members.json">JSON</a></li>
-
-                </ul>
+                <div id="links-container" class="links-container"></div>
             </section>
 
             <section class="card-2">
                 <h3>Information</h3>
-                <p>Weather: [Placeholder]</p>
-                <p>Number of Visits:<span id="visit-count">0</span></p>
-
+                <p>Temperature: <span id="temperature">Loading...</span></p>
+                <p>Description: <span id="description" class="description">Loading...</span></p>
+                <img src="" alt="Weather Icon" class="weather-icon" id="weather-icon">
+                <p>Number of Visits: <span id="visit-count">0</span></p>
             </section>
 
 
@@ -101,7 +86,9 @@
         <p id="copyrightYear">© 2024 | Czarina Ecraela | Philippines</p>
         <p id="lastModified"></p>
     </footer>
+    <script src="scripts/links.js"></script>
     <script src="scripts/getdates.js"></script>
+    <!-- <script src="scripts/links.js"></script> -->
 </body>
 
 </html>

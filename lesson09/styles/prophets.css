@@ -1,0 +1,41 @@
+h1 {
+    text-align: center;
+    color: #2323c0;
+}
+
+footer {
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #b5b5c7;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #e7e7ee;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.card {
+    border: 2px solid #bebef1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #bebef1;
+    box-sizing: border-box;
+
+}
+
+.card h2 {
+    color: #1c1c9b;
+}
+
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+    background-color: #bebef1;
+}

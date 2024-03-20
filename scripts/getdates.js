@@ -43,8 +43,40 @@ function initializeVisitCount() {
     }
 }
 
-// Call the functions
 initializeVisitCount();
 
-// Call the functions
+
 incrementVisitCount();
+
+
+// API Key - Weather
+
+
+const apiKey = 'ff2fd0ed392dc79d26e34dfc691614a9';
+const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?lat=40.5622&lon=-111.9297&appid=' + apiKey;
+
+// Function to fetch weather data from the API
+async function getWeather() {
+    try {
+        const response = await fetch(apiUrl);
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.log('Error fetching weather data:', error);
+    }
+}
+
+// Function to update the HTML content with weather data
+async function updateWeather() {
+    const weatherData = await getWeather();
+    document.getElementById('temperature').textContent = `${(weatherData.main.temp - 273.15).toFixed(2)}°C`;
+    document.getElementById('description').textContent = weatherData.weather[0].description;
+    document.getElementById('weather-icon').src = `http://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`;
+    document.getElementById('visit-count').textContent = parseInt(localStorage.getItem('visitCount') || 0) + 1;
+}
+
+// Update weather data when the page loads
+updateWeather();
+
+
+
