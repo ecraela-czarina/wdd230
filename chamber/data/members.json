@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "SynthoTech",
+            "address": "123 Synth St, AI City, Synthland",
+            "phone": "123-456-7890",
+            "website": "http://www.synthotech.com",
+            "image": "synthotech_logo.png",
+            "membership_level": "Gold",
+            "company_vision": "Leading provider of AI-powered solutions for industrial automation."
+        },
+        {
+            "name": "NeuroNexus",
+            "address": "456 Neural Dr, AI Town, Neurotopia",
+            "phone": "456-789-0123",
+            "website": "http://www.neuronexus.com",
+            "image": "neuronexus_logo.png",
+            "membership_level": "Silver",
+            "company_vision": "Innovative AI technology for neuroscience research and medical diagnostics."
+        },
+        {
+            "name": "QuantumAI",
+            "address": "789 Qubit Ave, AI Village, Quantumia",
+            "phone": "789-012-3456",
+            "website": "http://www.quantumai.com",
+            "image": "quantumai_logo.png",
+            "membership_level": "Bronze",
+            "company_visiono": "Pioneering quantum computing solutions integrated with artificial intelligence."
+        },
+        {
+            "name": "Genomix",
+            "address": "321 Gene Lane, AI City, Genetica",
+            "phone": "321-654-9870",
+            "website": "http://www.genomix.com",
+            "image": "genomix_logo.png",
+            "membership_level": "Silver",
+            "company_vision": "AI-driven genomics research and personalized medicine services."
+        },
+        {
+            "name": "CyberSynth",
+            "address": "654 Cyber Ave, AI Town, Cyberland",
+            "phone": "654-987-0123",
+            "website": "http://www.cybersynth.com",
+            "image": "cybersynth_logo.png",
+            "membership_level": "Gold",
+            "company_vision": "Securing the digital world with advanced AI cybersecurity solutions."
+        },
+        {
+            "name": "NanoBrain",
+            "address": "987 Nanotech Blvd, AI Village, Nanonia",
+            "phone": "987-210-3456",
+            "website": "http://www.nanobrain.com",
+            "image": "nanobrain_logo.png",
+            "membership_level": "Bronze",
+            "company_vision": "AI-powered nanotechnology for brain-computer interfaces and cognitive enhancement."
+        },
+        {
+            "name": "FusionSoft",
+            "address": "159 Fusion St, AI City, Fusionopolis",
+            "phone": "159-753-2468",
+            "website": "http://www.fusionsoft.com",
+            "image": "fusionsoft_logo.png",
+            "membership_level": "Silver",
+            "company_vision": "Integrating AI and software development for seamless digital transformation."
+        }
+    ]
+}

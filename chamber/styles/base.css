@@ -101,6 +101,7 @@ footer {
     color: #fff;
 }
 
+
 .light-mode {
     background-color: #eee;
     color: #000;
@@ -427,6 +428,30 @@ textarea {
 .thanks p {
     font-size: 1.5em;
     /* Adjust the font size as needed */
+}
+
+
+/* directory */
+
+#members-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #b5b5c7;
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#members-list img {
+    display: none;
+}
+
+
+.card h2 {
+    color: #001b64;
 }
 
 
