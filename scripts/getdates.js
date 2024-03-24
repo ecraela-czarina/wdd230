@@ -52,31 +52,60 @@ incrementVisitCount();
 // API Key - Weather
 
 
-const apiKey = 'ff2fd0ed392dc79d26e34dfc691614a9';
-const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?lat=40.5622&lon=-111.9297&appid=' + apiKey;
+// Select HTML elements in the document
+const temperatureElement = document.getElementById('temperature');
+const descriptionElement = document.getElementById('description');
+const weatherIconElement = document.getElementById('weather-icon');
 
-// Function to fetch weather data from the API
-async function getWeather() {
+const url = 'https://api.openweathermap.org/data/2.5/weather';
+
+
+const lat = '16.599406292101303';
+const lon = '120.32127006444036';
+
+
+const apiKey = 'ff2fd0ed392dc79d26e34dfc691614a9';
+
+
+const queryString = `?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
+
+
+async function apiFetch() {
     try {
-        const response = await fetch(apiUrl);
-        const data = await response.json();
-        return data;
+
+        const response = await fetch(url + queryString);
+
+
+        if (response.ok) {
+
+            const data = await response.json();
+
+
+            console.log('API Data:', data);
+
+
+            temperatureElement.textContent = data.main.temp + ' °F';
+
+
+            descriptionElement.textContent = data.weather[0].description;
+
+
+            const iconCode = data.weather[0].icon;
+            const iconUrl = `https://openweathermap.org/img/w/${iconCode}.png`;
+            weatherIconElement.src = iconUrl;
+            weatherIconElement.alt = data.weather[0].description;
+        } else {
+
+            throw new Error('Unable to fetch weather data');
+        }
     } catch (error) {
-        console.log('Error fetching weather data:', error);
+
+        console.error('Error fetching data:', error.message);
     }
 }
 
-// Function to update the HTML content with weather data
-async function updateWeather() {
-    const weatherData = await getWeather();
-    document.getElementById('temperature').textContent = `${(weatherData.main.temp - 273.15).toFixed(2)}°C`;
-    document.getElementById('description').textContent = weatherData.weather[0].description;
-    document.getElementById('weather-icon').src = `http://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`;
-    document.getElementById('visit-count').textContent = parseInt(localStorage.getItem('visitCount') || 0) + 1;
-}
 
-// Update weather data when the page loads
-updateWeather();
+apiFetch();
 
 
 
