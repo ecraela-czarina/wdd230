@@ -32,6 +32,10 @@
 </head>
 
 <body>
+    <div id="banner" class="banner">
+        <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.</p>
+        <span class="close-btn" onclick="closeBanner()">❌</span>
+    </div>
     <header>
         <img src="images/Logo.webp" alt="logo">
         <h1>La Union <br> Chamber of Commerce</h1>
@@ -40,10 +44,10 @@
             <break> 🕶️
         </div>
         <nav class="navigation">
-            <a href="#home">Home</a>
+            <a href="index.html">Home</a>
             <a href="discover.html">Discover</a>
-            <a href="#directory">Directory</a>
-            <a href="#contact">Contact Us</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join Us</a>
         </nav>
 
     </header>
@@ -55,14 +59,16 @@
 
         <section class="hero-image">
 
-            <h2>#</h2>
+            <h3 class="h3">#</h3>
             <div class="hero-image">
                 <div class="hero">
-                    <div id="dynamicText">Text</div>
+                    <div id="dynamicText">JOIN THE CHAMBER</div>
                     <picture>
-                        <source media="(max-width: 599px)" srcset="images/w06-img-small.webp">
-                        <source media="(min-width: 600px)" srcset="images/w06-img-medium.webp">
-                        <img src="images/w06-img.webp" alt="Urdaneta Temple" width="960" height="480">
+
+                        <source media="(max-width: 599px)" srcset="images/hero-img-med.webp">
+                        <source media="(min-width: 600px)" srcset="images/hero-img.webp">
+                        <source media="(min-width: 250px)" srcset="images/hero-img-small.webp">
+                        <img src="images/hero-img.webp" alt="Urdaneta Temple" width="960" height="480">
                     </picture>
                 </div>
 
@@ -97,10 +103,16 @@
             <!-- Weather Card Section -->
             <section class="weather-card">
                 <h2>Weather Information</h2>
-                <p>Current Temperature: <span id="currentTemperature">82.4</span> °F</p>
-                <p>Current Wind Speed: <span id="currentWindSpeed">8.08</span> mph</p>
+                <p>Current Temperature: <span id="currentTemperature"></span> °F</p>
+                <p>Current Wind Speed: <span id="currentWindSpeed"></span> mph</p>
                 <p>Wind Chill Factor: <span id="windChillFactor">[Placeholder]</span> °F</p>
-                <p>Weather: <span id="weather">[Placeholder]</span></p>
+                <p>Weather: <span id="weather">[Placeholder]</span> </p>
+                <img src="" alt="Weather Icon" class="weather-icon" id="weather-icon">
+                <p>Tomorrow: <span id="forecast1"></span> °F</p>
+                <p>In two days: <span id="forecast2"></span> °F</p>
+                <p>In Three days: <span id="forecast3"></span> °F</p>
+
+
                 <p>Number of Visits: <span id="numberOfVisits">[Placeholder]</span></p>
 
             </section>
@@ -135,16 +147,24 @@
                 </ul>
             </div>
         </section>
+
     </main>
 
     <footer>
-        <div>Contact Information:</div>
-        <div>Development Information:</div>
-        <div>Author: [Your Full Name]</div>
-        <div>Course: WDD 230</div>
-        <div>Last Modified: <span id="lastModified"></span></div>
+        <p>Contact Information: </p>
+        <p>Development Information:</p>
+        <p>Author: Czarina Ecraela</p>
+        <p>Course: WDD 230</p>
+        <p id="copyrightYear">© 2024</p>
+        <p id="lastModified"></p>
     </footer>
+
+
+
+
+    <script src="scripts/banner.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/forecast.js"></script>
 
     <script src="scripts/base.js"></script>
 

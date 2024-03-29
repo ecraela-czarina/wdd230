@@ -1,3 +1,15 @@
+// Last modified
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    var copyrightYear = new Date().getFullYear();
+    document.getElementById('copyrightYear').innerHTML = "&copy; " + copyrightYear + "<br>Czarina Ecraela<br> Philippines 🇵🇭";
+
+    var lastModified = document.getElementById('lastModified');
+    lastModified.textContent = "Last Modified: " + document.lastModified;
+});
+
+
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 
@@ -101,31 +113,28 @@ var lazyImages = document.querySelectorAll('.lazy-image');
 
 
 // Local Storage
+// JavaScript code for incrementing and displaying visit count
+function incrementVisitCount() {
+    let visitCount = localStorage.getItem('chamberVisitCount');
+    visitCount = visitCount ? parseInt(visitCount) + 1 : 1;
+    localStorage.setItem('chamberVisitCount', visitCount);
+    document.getElementById('numberOfVisits').textContent = visitCount;
+}
 
-document.addEventListener("DOMContentLoaded", function () {
-    var sidebarContent = document.getElementById("localStorage");
-    var lastVisit = localStorage.getItem("lastVisit");
-    var currentDate = new Date();
-    var message;
-
-    if (!lastVisit) {
-        message = "Welcome! Let us know if you have any questions.";
+function initializeVisitCount() {
+    let visitCount = localStorage.getItem('chamberVisitCount');
+    if (visitCount !== null) {
+        document.getElementById('numberOfVisits').textContent = visitCount;
     } else {
-        var daysSinceLastVisit = Math.floor((currentDate - new Date(lastVisit)) / (1000 * 60 * 60 * 24));
-        if (daysSinceLastVisit < 1) {
-            message = "Back so soon! Awesome!";
-        } else if (daysSinceLastVisit === 1) {
-            message = "You last visited 1 day ago.";
-        } else {
-            message = "You last visited " + daysSinceLastVisit + " days ago.";
-        }
+        localStorage.setItem('chamberVisitCount', '0');
+        document.getElementById('numberOfVisits').textContent = '0';
     }
+}
 
-    sidebarContent.textContent = message;
+initializeVisitCount(); // Initialize visit count when the page loads
+incrementVisitCount(); // Increment visit count for every visit
 
-    // Store current visit date in localStorage
-    localStorage.setItem("lastVisit", currentDate);
-});
+
 
 
 // trivia
@@ -187,6 +196,5 @@ updateText();
 
 // Add an event listener to update text when the screen is resized
 window.addEventListener("resize", updateText);
-
 
 
