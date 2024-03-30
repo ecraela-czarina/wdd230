@@ -48,11 +48,7 @@
         padding: 10px;
     }
 
-    section {
-        border: 1px solid #C6CF9B;
-        margin-bottom: 10px;
-        padding: 10px;
-    }
+
 
     /* Hero image Section */
     .hero-image a:hover {
@@ -87,6 +83,7 @@
     /* Section-groups */
 
     .section-group {
+        gap: 3px;
         display: grid;
         grid-template-columns: auto auto;
     }

@@ -2,9 +2,6 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
-    var copyrightYear = new Date().getFullYear();
-    document.getElementById('copyrightYear').innerHTML = "&copy; " + copyrightYear + "<br>Czarina Ecraela<br> Philippines 🇵🇭";
-
     var lastModified = document.getElementById('lastModified');
     lastModified.textContent = "Last Modified: " + document.lastModified;
 });
@@ -131,8 +128,8 @@ function initializeVisitCount() {
     }
 }
 
-initializeVisitCount(); // Initialize visit count when the page loads
-incrementVisitCount(); // Increment visit count for every visit
+initializeVisitCount();
+incrementVisitCount();
 
 
 
@@ -196,5 +193,7 @@ updateText();
 
 // Add an event listener to update text when the screen is resized
 window.addEventListener("resize", updateText);
+
+
 
 

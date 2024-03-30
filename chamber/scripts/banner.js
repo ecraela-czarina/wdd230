@@ -20,6 +20,5 @@ function checkAndDisplayBanner() {
 }
 
 
-// window.onload = function () {
+
 checkAndDisplayBanner();
-// };

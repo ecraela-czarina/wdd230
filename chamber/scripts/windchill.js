@@ -65,3 +65,6 @@ function calculateWindChill(temperature, windSpeed) {
 
 // Invoke the apiFetch function
 apiFetch();
+
+
+

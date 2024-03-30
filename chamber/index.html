@@ -44,10 +44,10 @@
             <break> 🕶️
         </div>
         <nav class="navigation">
-            <a href="index.html">Home</a>
-            <a href="discover.html">Discover</a>
-            <a href="directory.html">Directory</a>
-            <a href="join.html">Join Us</a>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="discover.html" class="nav-link">Discover</a>
+            <a href="directory.html" class="nav-link">Directory</a>
+            <a href="join.html" class="nav-link">Join Us</a>
         </nav>
 
     </header>
@@ -80,6 +80,7 @@
 
 
             <!-- Current Events Section -->
+
             <section class="current-events">
                 <h2>Current Events</h2>
 
@@ -125,25 +126,8 @@
         <section class="company-spotlights">
             <h2>Member Spotlights</h2>
             <div>
-                <ul>
-                    <li>
-                        <h3>Save a Turtle</h3>
-                        <a href="#">saveturle@gmail.com</a>
-                        <a href="#">+6399999883</a>
-                    </li>
+                <ul id="spotlight-list">
 
-                    <li>
-                        <h3>Save Trees</h3>
-                        <a href="#">savetrees@gmail.com</a>
-                        <a href="#">+6399999882</a>
-                    </li>
-
-
-                    <li>
-                        <h3>Entrepreneurs</h3>
-                        <a href="#">entrep@gmail.com</a>
-                        <a href="#">+6399999881</a>
-                    </li>
                 </ul>
             </div>
         </section>
@@ -151,21 +135,26 @@
     </main>
 
     <footer>
-        <p>Contact Information: </p>
-        <p>Development Information:</p>
-        <p>Author: Czarina Ecraela</p>
-        <p>Course: WDD 230</p>
-        <p id="copyrightYear">© 2024</p>
-        <p id="lastModified"></p>
+        <div class="footer">
+            <section class="logo-section">
+                <img src="images/Logo.webp" alt="logo">
+                <h1>La Union <br> Chamber of Commerce</h1>
+            </section>
+            <section class="author-details">
+                <p>Contact Information: 09661368510 | </p>
+                <p>Development Information: 2024 | </p>
+                <p>Author: Czarina Ecraela | </p>
+                <p>Course: WDD 230 | </p>
+                <p id="lastModified"></p>
+            </section>
+        </div>
     </footer>
 
-
-
-
+    <script src="scripts/wayfinding.js"></script>
+    <script src="scripts/spotlight.js"></script>
     <script src="scripts/banner.js"></script>
     <script src="scripts/windchill.js"></script>
     <script src="scripts/forecast.js"></script>
-
     <script src="scripts/base.js"></script>
 
 </body>

@@ -131,20 +131,71 @@ footer p {
     color: #fff;
 }
 
+/* Dark mode styles */
+.dark-mode #spotlight-list li {
+    background-color: #333;
+    color: #fff;
+    box-shadow: none;
+
+}
+
 
 .light-mode {
-    background-color: #eee;
+    background-color: #ffffff;
     color: #000;
 }
 
 /* Main */
 
-section {
-    border: 1px solid #C6CF9B;
-    margin-bottom: 10px;
+
+/* Current events */
+.current-events {
+    display: flex;
+    flex-direction: column;
+}
+
+.current-events li {
+    margin-right: 0px;
+    list-style: none;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* Dark mode styles */
+.dark-mode .current-events li {
+    background-color: #333;
+    color: #fff;
 }
 
 
+
+
+/* Weather-card */
+
+
+
+.weather-card {
+    text-align: center;
+}
+
+.weather-card p {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.weather-card span[id^="numberOfVisits"] {
+    font-weight: normal;
+}
+
+.weather-card p span {
+    font-weight: normal;
+    text-transform: capitalize;
+
+}
 
 /* Menu */
 #menu {
@@ -178,29 +229,25 @@ section {
     width: 100%;
 }
 
-
-header nav a {
-    display: none;
+.navigation .nav-link {
     padding: 1rem;
     text-align: center;
     text-decoration: none;
     color: #fff;
 }
 
-.navigation a:hover {
+.navigation .nav-link:hover {
     background-color: #C6CF9B;
     color: #596FB7;
     font-weight: 700;
 }
 
-/* when the button is clicked - the open class is toggled (added/removed) */
-/* when the navigation is open - the styles are applied to child links */
-.navigation.open a {
-    display: block;
-    text-align: center;
-    width: 100%;
-    justify-content: space-around;
+.navigation .current-page {
+    background-color: #C6CF9B;
+    color: #596FB7;
+    font-weight: 700;
 }
+
 
 .active {
     background-color: #555;
@@ -478,6 +525,83 @@ textarea {
     bottom: 50%;
     float: right;
     cursor: pointer;
+}
+
+
+
+#spotlight-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#spotlight-list li {
+    list-style: none;
+    flex: 1;
+    width: calc(50% - 20px);
+    margin: 10px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+
+
+/* footer */
+
+.footer {
+    background-color: #001b64;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: none;
+}
+
+
+.logo-section {
+    justify-content: center;
+    background-color: #001b64;
+    display: flex;
+    flex-direction: row;
+    color: #ffff66;
+
+}
+
+.logo-section img {
+    width: 100%;
+    max-width: 100px;
+}
+
+.author-details {
+    border-top: 1px solid #ffff66;
+    background-color: #001b64;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.author-details p {
+
+    margin: 10px;
+    color: #ffff66;
+
+}
+
+.footer section {
+    margin: 0;
+}
+
+
+
+/* Adjust layout for three items */
+@media screen and (min-width: 768px) {
+    #spotlight-list li {
+        width: calc(33.33% - 20px);
+        /* Three column layout, adjust as needed */
+    }
 }
 
 
