@@ -494,7 +494,29 @@ textarea {
 }
 
 
+.benefits,
+.reg-form {
+    border: solid 1px #445ba9;
+}
 
+.membership h4 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #001b64;
+    background-color: #ffff66;
+}
+
+.membership section {
+    border: none;
+    margin: 20px;
+    padding: 20px;
+
+}
+
+.membership p {
+    padding: 30px;
+}
 
 /* BANNER */
 
@@ -594,6 +616,9 @@ textarea {
     margin: 0;
 }
 
+h5 {
+    color: #001b64;
+}
 
 
 /* Adjust layout for three items */
@@ -643,6 +668,7 @@ textarea {
 
 /* directory */
 
+
 #members-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -659,9 +685,37 @@ textarea {
     display: none;
 }
 
+#members-list.list-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#members-list.list-view>div {
+    border: 1px solid #b5b5c7;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#members-list.list-view img {
+    display: block;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
 
 .card h2 {
+    color: #F6ECA9;
+
+}
+
+.directory-members {
     color: #001b64;
+    font-size: 50px;
+    text-align: center;
 }
 
 
