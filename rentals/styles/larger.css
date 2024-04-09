@@ -1,0 +1,165 @@
+@media only screen and (min-width: 768px) {
+
+    header {
+        display: flex;
+        align-items: center;
+        background-color: #fec631;
+        color: #01335b;
+    }
+
+    .navigation {
+        display: flex;
+        margin-left: auto;
+    }
+
+    .navigation a {
+        display: flex;
+        margin-left: 15px;
+        flex-grow: 1;
+
+
+
+    }
+
+    /* Adjustments for the button and h1 */
+    #menu {
+        display: none;
+        margin-left: 15px;
+
+    }
+
+
+    header {
+        align-items: center;
+        background-color: #fec631;
+        color: #01335b;
+    }
+
+    header img {
+        max-width: 150px;
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    header h1 {
+        padding: 20px;
+        font-family: 'Libre Baskerville', serif;
+        padding-right: 70px;
+        font-size: 40px;
+        font-weight: bolder;
+    }
+
+    .navigation a {
+        background-color: #01335b;
+        /* padding: 20px 30px; */
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+
+    /* wayfinding */
+
+    .navigation a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* Align text and dot to each end */
+        /* padding: 1rem; */
+
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .navigation a:hover {
+        background-color: #bbb;
+        color: #333;
+        font-weight: 700;
+    }
+
+    .current-page {
+        color: #ff0;
+        /* Change color for current page */
+    }
+
+    .current-indicator {
+        width: 8px;
+        height: 8px;
+        background-color: #ff0;
+        border-radius: 50%;
+        margin-left: 20px;
+
+    }
+
+    /* Container */
+
+
+    .container {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .call-to-action {
+        flex: 1;
+        text-align: center;
+        background-color: #fcf4c3;
+        height: 500px;
+        text-align: center;
+    }
+
+    .hero-image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .rentals {
+        flex: 1;
+        background-color: #fcf4c3;
+        text-align: center;
+    }
+
+    .rentals ul li {
+        list-style: none;
+    }
+
+
+
+    .weather-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 5px;
+    }
+
+
+    .call-to-action {
+        position: relative;
+    }
+
+    .call-to-action a {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 30px;
+        background-color: #01335b;
+        padding: 20px;
+        color: white;
+        font-weight: bolder;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        display: inline-block;
+        width: 80%;
+        border: solid 1px white;
+    }
+
+}
