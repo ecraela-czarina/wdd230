@@ -1,0 +1,85 @@
+{
+    "Max Rental Pricing": {
+        "Reservation": "Walk-In",
+        "RentalOptions": [
+            {
+                "Vehicle": "Honda Metro Scooter",
+                "MaxPersons": 1,
+                "Image": "images/metro.webp",
+                "HalfDay": {
+                    "Price": "$20",
+                    "FullDay": "$30"
+                },
+                "FullDay": {
+                    "Price": "$25",
+                    "FullDay": "$35"
+                }
+            },
+            {
+                "Vehicle": "Honda Dio Scooter",
+                "MaxPersons": 2,
+                "Image": "images/dio.webp",
+                "HalfDay": {
+                    "Price": "$30",
+                    "FullDay": "$40"
+                },
+                "FullDay": {
+                    "Price": "$35",
+                    "FullDay": "$45"
+                }
+            },
+            {
+                "Vehicle": "Honda PCX150 Scooter",
+                "MaxPersons": 2,
+                "Image": "images/PCX150.webp",
+                "HalfDay": {
+                    "Price": "$40",
+                    "FullDay": "$50"
+                },
+                "FullDay": {
+                    "Price": "$45",
+                    "FullDay": "$55"
+                }
+            },
+            {
+                "Vehicle": "Honda Pioneer ATV",
+                "MaxPersons": 4,
+                "Image": "images/pioneer.webp",
+                "HalfDay": {
+                    "Price": "$50",
+                    "FullDay": "$70"
+                },
+                "FullDay": {
+                    "Price": "$60",
+                    "FullDay": "$80"
+                }
+            },
+            {
+                "Vehicle": "Jeep Wrangler - 4 door with a/c",
+                "MaxPersons": 5,
+                "Image": "images/jeep-4door.webp",
+                "HalfDay": {
+                    "Price": "$70",
+                    "FullDay": "$100"
+                },
+                "FullDay": {
+                    "Price": "$85",
+                    "FullDay": "$125"
+                }
+            },
+            {
+                "Vehicle": "Jeep Wrangler - 2 door",
+                "MaxPersons": 4,
+                "Image": "images/jeep-2door.webp",
+                "HalfDay": {
+                    "Price": "$60",
+                    "FullDay": "$85"
+                },
+                "FullDay": {
+                    "Price": "$70",
+                    "FullDay": "$90"
+                }
+            }
+        ]
+    }
+}

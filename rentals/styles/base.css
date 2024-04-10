@@ -165,10 +165,7 @@ header h1 {
 
 
 .call-to-action a {
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
+    position: sticky;
     margin-top: 30px;
     background-color: #01335b;
     padding: 20px;
@@ -176,8 +173,15 @@ header h1 {
     font-weight: bolder;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: inline-block;
-    width: 70%;
+    width: 80%;
     border: solid 1px white;
+    /* margin: 60px; */
+    justify-content: center;
+
+}
+
+.call-to-action {
+    text-align: center;
 }
 
 .weather {
@@ -198,6 +202,37 @@ header h1 {
 .hero-image img {
     width: 100%;
     max-width: 100px;
+}
+
+/* Rentals */
+
+.rentals {
+    flex: 1;
+    background-color: #fcf4c3;
+    text-align: center;
+}
+
+.rentals ul li {
+    list-style: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+.rentals a {
+    position: sticky;
+    margin-top: 30px;
+    background-color: #01335b;
+    padding: 20px;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline-block;
+    width: 50%;
+    border: solid 1px white;
+    /* margin: 60px; */
+    justify-content: center;
+
 }
 
 /* Banner */
@@ -298,4 +333,166 @@ h5 {
     gap: 50px;
     display: grid;
     grid-template-columns: 3fr 3fr;
+}
+
+
+/* tables */
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.image-column img {
+    max-width: 50px;
+    display: block;
+    margin: auto;
+}
+
+
+/* reservation */
+
+/* form styling */
+
+.wf1 fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+
+}
+
+.wf1 legend {
+    color: #445ba9;
+    padding: 0.5rem;
+}
+
+.wf1 label {
+    display: block;
+    padding: 1rem;
+    font-size: .9rem;
+}
+
+.wf1 div {
+    color: #01335b;
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="tel"],
+.wf1 input[type="text"],
+.wf1 input[type="email"],
+.wf1 input[type="url"],
+.wf1 select,
+.wf1 input[type="number"],
+.wf1 input[type="date"],
+textarea {
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.wf1 input[type="radio"] {
+    margin-right: 6px;
+}
+
+
+
+.wf1 button[type="submit"] {
+    border: none;
+    background-image: -o-repeating-linear-gradient(45deg, #445ba9, #001b64);
+    background-image: repeating-linear-gradient(45deg, #445ba9, #001b64);
+    color: whitesmoke;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: 0rem 2% 2rem 2%;
+
+}
+
+.wf1 input:required {
+    border-right: solid 8px red;
+}
+
+
+.wf1 input:required:valid {
+    border-right: solid 8px green;
+}
+
+button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+/* Prevent hover effect on disabled submit button */
+button:disabled:hover {
+    background-color: #ccc;
+    color: #666;
+}
+
+.agree-checkbox {
+    display: flex;
+}
+
+/* contact */
+
+/* .container-contact {
+    display: grid;
+    grid-template-rows: 3fr;
+} */
+
+.contact-h1 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #001b64;
+}
+
+.contact {
+    background-color: #fcf4c3;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+}
+
+.contact-info iframe {
+    width: 200px;
+    height: 200px;
+}
+
+
+
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color:
+        #f76505;
 }

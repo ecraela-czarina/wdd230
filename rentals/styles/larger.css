@@ -99,6 +99,7 @@
         position: relative;
         display: flex;
         flex-wrap: wrap;
+        height: 600px;
     }
 
     .call-to-action {
@@ -147,10 +148,7 @@
     }
 
     .call-to-action a {
-        position: absolute;
-        bottom: 50px;
-        left: 50%;
-        transform: translateX(-50%);
+        position: sticky;
         margin-top: 30px;
         background-color: #01335b;
         padding: 20px;
@@ -160,6 +158,94 @@
         display: inline-block;
         width: 80%;
         border: solid 1px white;
+        /* margin: 60px; */
+        justify-content: center;
     }
 
+}
+
+.rentals-table {
+    display: flex;
+    justify-content: center;
+}
+
+.image-column img {
+    max-width: 150px;
+    display: block;
+    margin: auto;
+}
+
+
+/* reservation */
+
+.reservation-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+/* Rental Info styles */
+.rental-info {
+    width: 45%;
+}
+
+.rental-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.rental-info ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.rental-info li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Rental Form styles */
+.rental-form {
+    width: 45%;
+}
+
+.rental-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
 }

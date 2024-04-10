@@ -45,6 +45,125 @@
         </nav>
 
     </header>
+
+    <main>
+        <div class="reservation-container">
+
+            <div class="rental-info">
+                <h2>Rental Agreement Information</h2>
+                <ul>
+                    <li>A $50 security deposit is required to confirm reservations.</li>
+                    <li>A valid driver's license is required in hand at the time of rental.</li>
+                    <li>No one under the age of 12 years of age is allowed to ride on the scooters.</li>
+                    <li>Fuel charge is not included.</li>
+                    <li>Unlimited mileage.</li>
+                    <li>Liability insurance is included.</li>
+                    <li>Damage insurance is available for purchase.</li>
+                    <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                    <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.</li>
+                    <li>Rentals may be returned to either physical location.</li>
+                </ul>
+
+            </div>
+
+            <!-- Rental Form -->
+            <div class="rental-form">
+                <h2>Rental Form</h2>
+                <form action="thankyou.html" method="get" class="wf1">
+                    <!-- Form fields for collecting rental details -->
+                    <div class="form-group">
+                        <label for="date">Date:
+                            <input type="date" id="date" name="date" required></label>
+                    </div>
+                    <div class="form-group">
+                        <label for="period">Period:
+                            <input type="text" id="period" name="period" required></label>
+                    </div>
+                    <div class="form-group">
+                        <label for="rental-type">Rental Type:
+                            <select id="rental-type" name="rental-type" required>
+                                <option value="">Select Rental Type</option>
+                                <option value="Honda Metro Scooter">Honda Metro Scooter</option>
+                                <option value="Honda Dio Scooter">Honda Dio Scooter</option>
+                                <option value="Honda PCX150 Scooter">Honda PCX150 Scooter</option>
+                                <option value="Honda Pioneer ATV">Honda Pioneer ATV</option>
+                                <option value="Jeep Wrangler - 4 door with a/c">Jeep Wrangler - 4 door with a/c</option>
+                                <option value="Jeep Wrangler - 2 door">Jeep Wrangler - 2 door</option>
+                            </select></label>
+                    </div>
+                    <div class="form-group">
+                        <label for="number">Number:
+                            <input type="number" id="number" name="number" required></label>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:
+                            <input type="tel" id="phone" name="phone" required></label>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Name:
+                            <input type="text" id="name" name="name" required></label>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:
+                            <input type="email" id="email" name="email" required></label>
+                    </div>
+                    <div class="form-group">
+                        <label for="home">Home State or Country:
+                            <input type="text" id="home" name="home" required></label>
+                    </div>
+                    <div class="form-group">
+                        <label for="cruise-line">Cruise Line (if applicable):
+                            <input type="text" id="cruise-line" name="cruise-line"></label>
+                    </div>
+                    <div class="form-group">
+                        <label for="comments">Special Accommodations/Comments:
+                            <textarea id="comments" name="comments" rows="4"></textarea></label>
+                    </div>
+
+                    <!-- Submit button -->
+                    <div class="agree-checkbox">
+                        <input type="checkbox" id="agreeCheckbox">
+                        <label for="agreeCheckbox">I agree with the Rental Services and Agreements</label>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" id="submitButton" disabled>Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="social-logo">
+                <section class="social-media">
+                    <h5>.</h5>
+                    <a href="https://www.facebook.com/">
+                        <img src="images/fb-logo.webp" alt="facebook">
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <img src="images/insta-logo.webp" alt="instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/">
+                        <img src="images/linkedin-logo.webp" alt="linkedin">
+                    </a>
+                </section>
+                <section class="logo-section">
+                    <img src="images/Logo.webp" alt="logo">
+                    <h1>~Scoots~</h1>
+                </section>
+            </div>
+
+            <section class="author-details">
+                <h5>.</h5>
+                <p>Contact Information: 09661368510 | </p>
+                <p>Development Information: 2024 | </p>
+                <p>Author: Czarina Ecraela | </p>
+                <p>Course: WDD 230 | </p>
+                <p id="lastModified"></p>
+            </section>
+        </div>
+    </footer>
+    <script src="scripts/checkbox.js"></script>
     <script src="scripts/base.js"></script>
     <script src="scripts/wayfinding.js"></script>
 </body>
