@@ -249,3 +249,11 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+
+/* contact */
+
+.form-container {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+}

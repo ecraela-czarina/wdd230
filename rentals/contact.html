@@ -74,17 +74,24 @@
             </div>
 
 
-            <div class="contact-form">
-                <h2>Contact Form:</h2>
-                <form action="mailto:your-email@example.com" method="post" enctype="text/plain" class="wf1">
-                    <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="name"><br>
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email"><br>
-                    <label for="comment">Comment:</label><br>
-                    <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
-                    <input type="submit" value="Submit">
-                </form>
+            <div class="form-container">
+
+                <div class="contact-form">
+                    <h2>Contact Form:</h2>
+                    <form action="mailto:your-email@example.com" method="post" enctype="text/plain" class="wf1">
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name"><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email"><br>
+                        <label for="comment">Comment:</label><br>
+                        <label><textarea id="comment" name="comment" rows="4" cols="50"></textarea><br></label>
+                        <div class="form-group">
+                            <button type="submit" id="submitButton" disabled>Submit</button>
+                        </div>
+                    </form>
+                </div>
+
+
             </div>
 
         </div>

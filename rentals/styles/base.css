@@ -380,7 +380,8 @@ th {
     padding: 0.5rem;
 }
 
-.wf1 label {
+.wf1 label,
+textarea {
     display: block;
     padding: 1rem;
     font-size: .9rem;
@@ -400,7 +401,7 @@ th {
 .wf1 select,
 .wf1 input[type="number"],
 .wf1 input[type="date"],
-textarea {
+.wf1 textarea {
     background-color: #eee;
     display: block;
     border: solid 1px #999;
@@ -456,12 +457,6 @@ button:disabled:hover {
     display: flex;
 }
 
-/* contact */
-
-/* .container-contact {
-    display: grid;
-    grid-template-rows: 3fr;
-} */
 
 .contact-h1 {
     text-align: center;
@@ -484,15 +479,16 @@ button:disabled:hover {
 .contact-info iframe {
     width: 200px;
     height: 200px;
+    margin: 20px;
 }
 
+.form-container {
+    display: grid;
+    grid-column: auto;
+    background-color: #fcf4c3;
+    padding: 0%;
+}
 
-
-
-.contact-form {
-    display: flex;
-    justify-content: center;
+.contact-form h1 {
     text-align: center;
-    background-color:
-        #f76505;
 }
