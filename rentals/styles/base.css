@@ -441,14 +441,14 @@ textarea {
     border-right: solid 8px green;
 }
 
-button:disabled {
+.reserve-button:disabled {
     background-color: #ccc;
     color: #666;
     cursor: not-allowed;
 }
 
 /* Prevent hover effect on disabled submit button */
-button:disabled:hover {
+.reserve-button:disabled:hover {
     background-color: #ccc;
     color: #666;
 }
@@ -491,4 +491,12 @@ button:disabled:hover {
 
 .contact-form h1 {
     text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    border: solid 1px #001b64;
+    width: 90%;
+    max-width: 90%;
 }
